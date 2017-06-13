@@ -18,7 +18,7 @@ export default class SizeChanger extends Component {
     return (
       <select className="dropDownContainer" 
       onChange={ (e) => this.props.update(parseInt(e.target.value, 10)) }
-      disable={this.props.allowEdit === false} >
+      disabled={this.props.allowEdit === 'false'} >
         <option value="12"> 12 </option>
         <option value="13"> 13 </option>
         <option value="14"> 14 </option>
